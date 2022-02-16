@@ -93,11 +93,15 @@
 }
 .detail-section .detail-bottom .bottom-info-card h2{
     font-size: 30px;
-    padding-bottom: 20px;
+    background-color: #f1c50e;
+}
+.detail-section .detail-bottom .bottom-info-card h2 span{
+    background-color: #141824;
 }
 .detail-section .detail-bottom .bottom-info-card p{
     font-size: 20px;
     line-height: 30px;
+    padding-top: 25px;
 }
 /* styling access section */
 .access-section{
@@ -120,7 +124,13 @@
 .access-section .left .content h2{
     font-size: 50px;
     font-weight: 400;
-    padding-bottom: 25px;
+    background-color: #f1c50e;
+}
+.access-section .left .content h2 span{
+    background-color: #e8eae3;
+}
+.access-section .left .content .own-bg{
+    background-color: #e8eae3;
 }
 .access-section .left .content p{
     font-size: 20px;
@@ -128,6 +138,7 @@
     color: #333;
     padding-bottom: 25px;
     line-height: 28px;
+    padding-top: 25px;
 }
 .access-section .left .content button{
     background: #141824;
@@ -245,13 +256,17 @@
 .sign-up-section .right .content .top h2{
     font-size: 50px;
     font-weight: 400;
-    padding-bottom: 25px;
+    background-color: #f1c50e;
+}
+.sign-up-section .right .content .top h2 span{
+    background-color: #e8eae3;
 }
 .sign-up-section .right .content .top p{
     font-size: 22px;
     font-weight: 300;
     color: #333;
     padding-bottom: 40px;
+    padding-top: 25px;
     letter-spacing: 1px;
     line-height: 30px;
 }
@@ -303,18 +318,21 @@
 .footer-section .left h2{
     font-size: 50px;
     font-weight: 400;
-    padding-bottom: 25px;
+    background-color: #f1c50e;
+}
+.footer-section .left h2 span{
+    background-color: #141824;
 }
 .footer-section .left p{
     font-size: 20px;
     font-weight: 400;
-    padding-bottom: 25px;
+    padding-top: 25px;
     line-height: 30px;
     letter-spacing: 0.5px;
 }
 .footer-section .left .brand-logo i{
     font-size: 30px;
-    padding-left: 10px;
+    padding: 25px 0 0 10px;
     color: #ffb600;
     cursor: pointer;
 }
@@ -426,6 +444,12 @@
         height: auto;
         grid-template-columns: 1fr;
         padding: 120px 20px;
+    }
+    .sign-up-section .left{
+        width: 100%;
+    }
+    .sign-up-section .left .image{
+        width: 100%;
     }
     .sign-up-section .right .content .top h2{
         font-size: 35px;
