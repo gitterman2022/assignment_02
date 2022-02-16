@@ -61,7 +61,7 @@
     display: grid;
 }
 .detail-section .line-top{
-    border-top: 1px solid #fff;
+    border-top: 1px solid #bbb;
 }
 .detail-section .detail-top{
     align-self: center;
@@ -69,7 +69,7 @@
 .detail-section .detail-top span i{
     color: #e8eae3;
     font-size: 40px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
 }
 .detail-section .detail-top h2{
     font-size: 50px;
@@ -80,7 +80,7 @@
     font-size: 25px;
 }
 .detail-section .line-bottom{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #bbb;
 }
 .detail-section .detail-bottom{
     align-self: center;
@@ -91,17 +91,9 @@
 .detail-section .detail-bottom .bottom-info-card{
     text-align: left;
 }
-
 .detail-section .detail-bottom .bottom-info-card h2{
     font-size: 30px;
     padding-bottom: 20px;
-}
-.detail-section .detail-bottom .bottom-info-card .card-heading h2::after{
-/*     content: " ";
-    height: 30px;
-    width: 400px;
-    background-color: rgb(241, 197, 14, 0.6);
-    position: absolute; */
 }
 .detail-section .detail-bottom .bottom-info-card p{
     font-size: 20px;
@@ -135,6 +127,7 @@
     font-weight: 400;
     color: #333;
     padding-bottom: 25px;
+    line-height: 28px;
 }
 .access-section .left .content button{
     background: #141824;
@@ -175,7 +168,7 @@
     display: grid;
 }
 .testimonial-section .line-top{
-    border-top: 1px solid #fff;
+    border-top: 1px solid #bbb;
 }
 .testimonial-section .testimonial{
     align-self: center;
@@ -183,7 +176,7 @@
 .testimonial-section .testimonial span i{
     color: #e8eae3;
     font-size: 40px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
 }
 .testimonial-section .testimonial h2{
     font-size: 50px;
@@ -195,7 +188,7 @@
     padding: 0 120px 30px 120px;
 }
 .testimonial-section .line-bottom{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #bbb;
 }
 /* styling gallery section */
 .gallery-section{
@@ -210,8 +203,6 @@
 }
 .gallery-section .gallery .image{
     height: 500px;
-    /*! justify-content: center; */
-    /*! width: 100%; */
 }
 .gallery-section .gallery .image img{
     width: 100%;
@@ -262,6 +253,7 @@
     color: #333;
     padding-bottom: 40px;
     letter-spacing: 1px;
+    line-height: 30px;
 }
 .sign-up-section .right .content .bottom{
     align-self: center;
@@ -367,7 +359,7 @@
 }
 /* styling for mobile responsiveness */
 @media only screen and (max-width: 480px){
-    /* stylig for header part */
+    /* stylig for header section part */
     .header-section{
         height: auto;
         padding: 150px 20px 20px 20px;
@@ -376,6 +368,82 @@
         font-size: 60px;
     }
     .header-section .header-content .card{
-        flex-direction: column
+        flex-direction: column;
+    }
+    /* styling for detail section part */
+    .detail-section{
+        height: auto;
+        padding: 50px 20px 80px 20px;
+    }
+    .detail-section .line-top{
+        padding-bottom: 100px;
+    }
+    .detail-section .detail-top h2{
+        font-size: 35px;
+    }
+    .detail-section .line-bottom{
+        padding-top: 100px;
+    }
+    .detail-section .detail-bottom{
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+    }
+    .detail-section .detail-bottom .bottom-info-card p{
+        font-size: 22px;
+    }
+    /* styling access section part */
+    .access-section{
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 120px 20px 120px 20px;
+    }
+    .access-section .left .content h2{
+        font-size: 40px;
+    }
+    /* styling testimonial section part */
+    .testimonial-section{
+        height: auto;
+        padding: 50px 20px;
+    }
+    .testimonial-section .line-top{
+        padding-bottom: 100px;
+    }
+    .testimonial-section .testimonial p{
+        padding: 0 0 50px 0;
+    }
+    .testimonial-section .line-bottom{
+        padding-bottom: 50px;
+    }
+    /* styling gallery section part */
+    .gallery-section{
+        height: auto;
+    }
+    .gallery-section .gallery{
+        grid-template-columns: 1fr;
+    }
+    /* styling sign up section part */
+    .sign-up-section{
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 120px 20px;
+    }
+    .sign-up-section .right .content .top h2{
+        font-size: 35px;
+    }
+    .sign-up-section .right .content .bottom{
+        flex-direction: column;
+    }
+    .sign-up-section .right .content .bottom .bottom-content h2{
+        font-size: 35px;
+    }
+    /* styling footer section part */
+    .footer-section{
+        height: auto;
+        padding: 120px 20px;
+        grid-template-columns: 1fr;
+    }
+    .footer-section .right{
+        width: 100%;
+        padding: 0;
     }
 }
